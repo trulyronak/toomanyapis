@@ -1,0 +1,8 @@
+name: Rocket API
+tasks:
+  start:
+    command: export ROCKET_PORT=$OPTIC_API_PORT ; cargo run;
+    baseUrl: 'http://localhost:8000'
+ignoreRequests:
+  - GET /favicon.ico
+  - OPTIONS *

@@ -1,0 +1,8 @@
+name: Flask API
+tasks:
+  start:
+    command: python main.py
+    baseUrl: 'http://localhost:3300'
+ignoreRequests:
+  - GET /favicon.ico
+  - OPTIONS *
